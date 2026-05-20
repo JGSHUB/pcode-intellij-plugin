@@ -17,7 +17,7 @@ P-Code VM helps students learn compiler construction, intermediate code generati
 
 ## Screenshots
 
-### Step-by-Step Execution
+### Step-by-Step Execution and Runtime Visualization
 ![Execution](screenshots/execution.png)
 
 ## Example
