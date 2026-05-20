@@ -1,3 +1,7 @@
+<a href="https://plugins.jetbrains.com/plugin/31858">
+  <img src="https://img.shields.io/badge/JetBrains-Install%20Plugin-blue">
+</a>
+
 # P-Code VM
 
 Educational P-Code Virtual Machine and Debugger plugin for IntelliJ IDEA.
