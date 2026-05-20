@@ -1,7 +1,4 @@
-![Static Badge](https://img.shields.io/badge/author-javiergs-orange)
-
-
-<a href="https://plugins.jetbrains.com/plugin/31858">
+![Static Badge](https://img.shields.io/badge/author-javiergs-orange) <a href="https://plugins.jetbrains.com/plugin/31858">
   <img src="https://img.shields.io/badge/JetBrains-Install%20Plugin-blue">
 </a>
 
