@@ -1,9 +1,7 @@
-# P-Code Instruction Set
+## P-Code Instruction Set
 
 P-Code VM executes a stack-based intermediate language commonly used in compiler construction courses.
-
-
-# Core Instructions
+Core Instructions are as follows.
 
 ## LIT
 
@@ -155,7 +153,7 @@ OPR operationCode,0
 ```
 
 
-# Important Operators
+## Important Operators
 
 | Operator | Description |
 |---|---|
@@ -175,9 +173,8 @@ OPR operationCode,0
 | OPR 20 | Print |
 | OPR 21 | Print line |
 
----
 
-# Example Arithmetic Execution
+## Example Arithmetic Execution
 
 ```text
 LIT 5,0
