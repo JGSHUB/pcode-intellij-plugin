@@ -112,10 +112,9 @@ This project was designed as an educational tool for compiler and virtual machin
 
 ## Documentation
 
-- [Instruction Set](docs/instruction-set.md)
-- [Runtime Model](docs/runtime-model.md)
-- [Frames and Calls](docs/frames-and-calls.md)
-- [Getting Started](docs/getting-started.md)
+- [Instruction Set](instruction-set.md)
+- [Runtime Model](runtime-model.md)
+- [Sample Programs](sample-programs.md)
 
   
 ## Status
