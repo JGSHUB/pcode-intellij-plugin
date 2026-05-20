@@ -1,6 +1,21 @@
 ## Runtime Model
 
 P-Code VM uses a classical stack-machine runtime architecture inspired by educational compiler virtual machines.
+The VM execution loop performs:
+
+1. fetch instruction
+2. decode instruction
+3. execute instruction
+4. update runtime state
+5. advance program counter
+
+This process repeats until:
+
+```text
+OPR 0,0
+```
+
+terminates execution.
 
 The runtime system is designed to support:
 
@@ -148,33 +163,3 @@ The VM:
 3. jumps if the condition matches
 
 
-## Execution Cycle
-
-The VM execution loop performs:
-
-1. fetch instruction
-2. decode instruction
-3. execute instruction
-4. update runtime state
-5. advance program counter
-
-This process repeats until:
-
-```text
-OPR 0,0
-```
-
-terminates execution.
-
-
-## Educational Purpose
-
-The runtime model demonstrates core concepts used in compiler and virtual machine courses:
-
-- stack machines
-- activation records
-- recursion
-- runtime environments
-- instruction execution
-- symbol resolution
-- intermediate code interpretation
