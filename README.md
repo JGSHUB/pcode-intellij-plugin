@@ -15,6 +15,11 @@ P-Code VM helps students learn compiler construction, intermediate code generati
 - Return value support
 - P-Code editor integration for IntelliJ IDEA
 
+## Screenshots
+
+### Step-by-Step Execution
+![Execution](screenshots/execution.png)
+
 ## Example
 
 ### Recursive Factorial
