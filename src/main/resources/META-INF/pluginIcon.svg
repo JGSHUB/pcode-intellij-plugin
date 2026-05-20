@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+
+     width="80"
+
+     height="80"
+
+     viewBox="0 0 80 80">
+
+
+    <!-- j -->
+
+    <text x="10"
+
+          y="56"
+
+          fill="#f2f2f2"
+
+          font-family="JetBrains Mono, Consolas, monospace"
+
+          font-size="48"
+
+          font-weight="700">j</text>
+
+    <!-- g -->
+
+    <text x="27"
+
+          y="56"
+
+          fill="#ff9b5c"
+
+          font-family="JetBrains Mono, Consolas, monospace"
+
+          font-size="48"
+
+          font-weight="700">g</text>
+
+    <!-- s -->
+
+    <text x="49"
+
+          y="56"
+
+          fill="#ff9b5c"
+
+          font-family="JetBrains Mono, Consolas, monospace"
+
+          font-size="48"
+
+          font-weight="700">s</text>
+
+</svg>

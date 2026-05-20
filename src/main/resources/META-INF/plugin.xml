@@ -1,0 +1,65 @@
+<idea-plugin>
+    <version>1.0.0</version>
+
+    <id>javiergs.pcode-intellij-plugin</id>
+    <name>P-Code VM</name>
+    <vendor>JGS Labs</vendor>
+
+    <description><![CDATA[
+    <p><b>P-Code VM</b> is an educational virtual machine and debugger for IntelliJ IDEA.</p>
+    <p>It helps students learn compiler construction and intermediate code execution through
+    syntax highlighting, step-by-step execution, register stack visualization, symbol table
+    inspection, call stack tracking, runtime frames, method calls, recursion, and return values.</p>
+    ]]></description>
+
+    <change-notes><![CDATA[
+    Initial release with P-Code syntax highlighting, VM execution, debugger console,
+    register stack, symbol table, call stack, runtime frames, method calls, recursion,
+    and return values.
+    ]]></change-notes>
+
+    <depends>com.intellij.modules.platform</depends>
+    <resource-bundle>messages.MyMessageBundle</resource-bundle>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow
+                id="P-Code Console"
+                factoryClass="javiergs.pcode.PCodeConsoleFactory"
+                anchor="bottom"/>
+
+        <fileType
+                name="P-Code VM File"
+                language="PCode"
+                implementationClass="javiergs.pcode.PCodeFileType"
+                fieldName="INSTANCE"
+                extensions="pcode"/>
+
+        <lang.syntaxHighlighterFactory
+                language="PCode"
+                implementationClass="javiergs.pcode.PCodeSyntaxHighlighterFactory"/>
+    </extensions>
+
+    <actions>
+        <action
+                id="RunPCodeAction"
+                class="javiergs.pcode.RunPCodeAction"
+                text="Execute P-Code"
+                description="Execute P-Code Program">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+        <action
+                id="StepPCodeAction"
+                class="javiergs.pcode.StepPCodeAction"
+                text="Step P-Code"
+                description="Execute one P-Code instruction">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+    </actions>
+
+    <projectListeners>
+        <listener
+                class="javiergs.pcode.PCodeFileEditorListener"
+                topic="com.intellij.openapi.fileEditor.FileEditorManagerListener"/>
+    </projectListeners>
+
+</idea-plugin>

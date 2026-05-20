@@ -1,0 +1,21 @@
+#P,label,global,1
+x,int,global,0
+y,int,global,0
+result,int,global,0
+add-int-int,method,global,8
+a,int,add-int-int,0
+b,int,add-int-int,0
+@
+LIT 3,0
+LIT 4,0
+CAL add-int-int,0
+STO result,0
+LOD result,0
+OPR 21,0
+OPR 0,0
+STO b,0
+STO a,0
+LOD a,0
+LOD b,0
+OPR 2,0
+OPR 1,0
