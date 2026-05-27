@@ -1,13 +1,11 @@
 # Changelog
 
-## 1.0.0
+## [1.0.2] - 2026-05-26
 
-- Initial release
-- P-Code syntax highlighting
-- Virtual machine execution
-- Step-by-step debugging
-- Register stack visualization
-- Symbol table inspection
-- Runtime frames
-- Method calls and recursion
-- Sample factorial program
+### Added
+- Added modulo (%) operator support to the P-Code VM
+- New operator mapping: `OPR 0,6 -> %`
+
+### Improved
+- Improved arithmetic type handling
+- Safer string operation evaluation

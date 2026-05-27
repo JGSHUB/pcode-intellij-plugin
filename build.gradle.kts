@@ -21,13 +21,13 @@ dependencies {
     testRuntimeOnly("org.junit.platform:junit-platform-launcher:1.10.2")
     intellijPlatform {
         intellijIdea("2025.3.4.1")
-        implementation(files("libs/pcode-vm-1.0-obfuscated.jar"))
+        implementation(files("libs/pcode-vm-1.0.2-obfuscated.jar"))
     }
 }
 
 tasks.register<ProGuardTask>("obfuscateJar") {
-    injars("libs/pcode-vm-1.0-snapshot.jar")
-    outjars("libs/pcode-vm-1.0-obfuscated.jar")
+    injars ("libs/pcode-vm-1.0.2.jar")
+    outjars("libs/pcode-vm-1.0.2-obfuscated.jar")
     configuration("proguard-rules.pro")
 }
 
